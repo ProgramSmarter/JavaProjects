@@ -1,0 +1,43 @@
+/*Ishan Singh
+9/27/2022 
+Project Three
+Printing a specific figure using static methods*/
+import java.util.Scanner();
+public class FigurePrinter {
+   public static void drawFigure(String whichhalf) {
+      //Printing something based on if they want a top half, bottom half, or a line
+      if (whichhalf.equals("T")) {
+         System.out.println("  _______");
+         System.out.println(" /       \\");
+         System.out.println("/         \\");
+
+      }
+      else if (whichhalf.equals("B")) {
+         System.out.println("\\         /");
+         System.out.println(" \\_______/");
+      }
+      else if (whichhalf.equals("L")) {
+         System.out.println("-\"-'-\"-'-\"-");
+      }
+   
+   }
+   public static void main (String[] args) {
+      // call a method that draws the hexagon halves
+      int x = 0;
+      while (x < 2) {
+         drawFigure("T");
+         drawFigure("B");
+         drawFigure("L");
+         x++;
+      }
+      drawFigure("B");
+      drawFigure("T");
+      drawFigure("L");
+      drawFigure("B");
+      Scanner userinput = new Scanner(System.in);
+      System.out.println("Print a string of letters to create a figure. Ex: BTL would create a figure with a bottom half, then a top half, then a comma dash line");
+      userfigure = userinput.nextLine();
+      for
+      
+   }
+}
